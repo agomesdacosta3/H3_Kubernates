@@ -13,5 +13,7 @@ RUN apt-get update && apt-get install -y python3 python3-pip && pip install --no
 # Copiez le code source de l'application Flask dans le conteneur
 COPY . .
 
+EXPOSE 5001
+
 # Commande pour exécuter l'application Flask quand le conteneur démarre
 CMD ["python3", "app.py"]
