@@ -14,4 +14,4 @@ RUN apt-get update && apt-get install -y python3 python3-pip && pip install --no
 COPY . .
 
 # Commande pour exécuter l'application Flask quand le conteneur démarre
-CMD ["python", "app.py"]
+CMD ["python3", "app.py"]
